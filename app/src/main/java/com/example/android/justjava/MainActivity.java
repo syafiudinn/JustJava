@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitOrder(View view) {
-        int harga = quantity *2000;
-        String message = "tOTAL :Rp"+harga;
-        displayMessage(message);
+        int price = quantity *5;
+        String message_name = "Total :"+price;
+        message_name = message_name +"\nThank You!";
+        displayMessage(message_name);
+        //displayprice(harga);
     }
     private void display(int number){
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
